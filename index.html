@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio Jurídico | Firma de Abogados</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="index.css"> 
+</head>
+<body class="bg-slate-light font-sans text-slate-800 antialiased selection:bg-gold selection:text-navy">
+
+    <div class="bg-navy-dark text-slate-400 text-xs py-2 px-6 border-b border-navy-light/40">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-6">
+                <span class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-gold"></i> Dirección Sucursal 3000, Comuna, Ciudad</span>
+                <span class="hidden md:flex items-center gap-2"><i class="fa-solid fa-phone text-gold"></i> +56 2 2323 0000</span>
+            </div>
+            <!-- <div class="flex items-center space-x-6">
+                <a href="#contacto" class="hover:text-gold transition-colors duration-200">Portal Clientes</a>
+                <span class="text-navy-light">|</span>
+                <div class="flex items-center space-x-2">
+                    <button class="font-semibold text-gold underline cursor-pointer">ES</button>
+                    <span>/</span>
+                    <button class="hover:text-gold transition-colors duration-200 cursor-pointer">EN</button>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <header class="sticky top-0 z-50 bg-navy/95 backdrop-blur-md text-white border-b border-navy-light/60 shadow-xl transition-all duration-300" id="main-header">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 border-2 border-gold flex items-center justify-center font-serif text-2xl text-gold font-bold transition-transform duration-300 group-hover:rotate-45">
+                    <span class="transition-transform duration-300 group-hover:-rotate-45">A</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif text-xl tracking-wider uppercase font-bold text-white group-hover:text-gold transition-colors">Estudio Jurídico</span>
+                    <span class="text-[9px] tracking-[0.25em] text-slate-400 uppercase">Abogados &bull; Legal Counsel</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex items-center space-x-8 text-xs font-semibold tracking-widest uppercase">
+                <a href="#nosotros" class="hover:text-gold transition-colors py-2 border-b-2 border-transparent hover:border-gold">Nosotros</a>
+                <a href="#practicas" class="hover:text-gold transition-colors py-2 border-b-2 border-transparent hover:border-gold">Áreas de Práctica</a>
+                <a href="#equipo" class="hover:text-gold transition-colors py-2 border-b-2 border-transparent hover:border-gold">Equipo</a>
+                <!-- <a href="#publicaciones" class="hover:text-gold transition-colors py-2 border-b-2 border-transparent hover:border-gold">Publicaciones</a> -->
+                <a href="#reconocimientos" class="hover:text-gold transition-colors py-2 border-b-2 border-transparent hover:border-gold">Reconocimientos</a>
+                <a href="#contacto" class="px-5 py-2.5 bg-gold text-navy font-bold rounded-sm hover:bg-gold-hover transition-all shadow-md">Contacto</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-2xl text-gold focus:outline-none" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-navy-dark border-b border-navy-light px-6 py-6 space-y-4">
+            <a href="#nosotros" class="block text-sm font-semibold tracking-widest uppercase hover:text-gold py-2 border-b border-navy-light/40">Nosotros</a>
+            <a href="#practicas" class="block text-sm font-semibold tracking-widest uppercase hover:text-gold py-2 border-b border-navy-light/40">Áreas de Práctica</a>
+            <a href="#equipo" class="block text-sm font-semibold tracking-widest uppercase hover:text-gold py-2 border-b border-navy-light/40">Equipo</a>
+            <!-- <a href="#publicaciones" class="block text-sm font-semibold tracking-widest uppercase hover:text-gold py-2 border-b border-navy-light/40">Publicaciones</a> -->
+            <a href="#reconocimientos" class="block text-sm font-semibold tracking-widest uppercase hover:text-gold py-2 border-b border-navy-light/40">Reconocimientos</a>
+            <a href="#contacto" class="block text-center text-sm font-bold tracking-widest uppercase bg-gold text-navy py-3 rounded-sm hover:bg-gold-hover">Contacto</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-navy text-white min-h-[85vh] flex items-center overflow-hidden">
+        <!-- Background Pattern & Overlay -->
+        <div class="absolute inset-0 bg-[radial-gradient(#1e2e45_1px,transparent_1px)] [background-size:24px_24px] opacity-30"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-navy via-navy/90 to-transparent z-10"></div>
+        
+        <!-- Hero Background Image (Law office atmosphere) -->
+        <div class="absolute right-0 top-0 bottom-0 w-full lg:w-2/3 bg-cover bg-center opacity-25 lg:opacity-40 filter contrast-125" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop');"></div>
+
+        <div class="max-w-7xl mx-auto px-6 py-20 relative z-20 w-full">
+            <div class="max-w-2xl space-y-8 animate__animated" data-animation="animate__fadeIn">
+                <div class="inline-flex items-center space-x-3 px-3 py-1 bg-navy-light/60 border border-gold/30 rounded-full text-xs font-semibold tracking-widest uppercase text-gold">
+                    <span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span>
+                    <span>Líderes en Asesoría Corporativa &amp; Litigios</span>
+                </div>
+                
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
+                    Excelencia Jurídica y <span class="gold-gradient-text italic font-normal">Visión Estratégica</span>
+                </h1>
+                
+                <p class="text-slate-300 text-base sm:text-lg font-light leading-relaxed">
+                    Brindamos soluciones legales complejas e innovadoras para corporaciones multinacionales, instituciones financieras y asuntos regulatorios de alto impacto en la región.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+                    <a href="#practicas" class="px-8 py-4 bg-gold text-navy font-bold text-xs tracking-widest uppercase rounded-sm hover:bg-gold-hover transition-all text-center shadow-lg hover:shadow-gold/20">
+                        Áreas de Práctica
+                    </a>
+                    <a href="#contacto" class="px-8 py-4 bg-transparent border border-white/30 text-white font-bold text-xs tracking-widest uppercase rounded-sm hover:border-gold hover:text-gold transition-all text-center backdrop-blur-sm">
+                        Agendar Consulta
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Accent Bar -->
+        <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-gold via-gold-light to-gold"></div>
+    </section>
+
+    <!-- METRICS & NUMBERS SECTION -->
+    <section class="bg-navy-dark text-white py-16 border-b border-navy-light/40">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 divide-y lg:divide-y-0 lg:divide-x divide-navy-light/60 animate__animated" data-animation="animate__fadeIn">
+                <div class="p-4 text-center lg:text-left">
+                    <div class="font-serif text-4xl lg:text-5xl font-bold text-gold mb-2">+45</div>
+                    <div class="text-xs uppercase tracking-widest text-slate-400 font-semibold">Años de Trayectoria</div>
+                </div>
+                <div class="p-4 text-center lg:text-left pt-8 lg:pt-4">
+                    <div class="font-serif text-4xl lg:text-5xl font-bold text-gold mb-2">120+</div>
+                    <div class="text-xs uppercase tracking-widest text-slate-400 font-semibold">Abogados Especialistas</div>
+                </div>
+                <div class="p-4 text-center lg:text-left pt-8 lg:pt-4">
+                    <div class="font-serif text-4xl lg:text-5xl font-bold text-gold mb-2">98%</div>
+                    <div class="text-xs uppercase tracking-widest text-slate-400 font-semibold">Éxito en Litigios Complejos</div>
+                </div>
+                <div class="p-4 text-center lg:text-left pt-8 lg:pt-4">
+                    <div class="font-serif text-4xl lg:text-5xl font-bold text-gold mb-2">Tier 1</div>
+                    <div class="text-xs uppercase tracking-widest text-slate-400 font-semibold">Chambers &amp; Partners</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION (NOSOTROS) -->
+    <section id="nosotros" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6 animate__animated" data-animation="animate__fadeIn">
+                    <div class="text-xs font-bold tracking-widest text-gold uppercase">Sobre La Firma</div>
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-navy leading-tight">
+                        Compromiso riguroso con los más altos estándares éticos y profesionales.
+                    </h2>
+                    <p class="text-slate-custom leading-relaxed">
+                        Fundada con la convicción de ofrecer representación jurídica excepcional, Estudio Jurídico se ha consolidado como una firma de referencia para transacciones complejas, arbitrajes internacionales y asesoría estratégica de alto nivel.
+                    </p>
+                    <p class="text-slate-custom leading-relaxed">
+                        Nuestro equipo multidisciplinario combina un profundo conocimiento del entorno regulatorio local con una sólida perspectiva global, permitiéndonos anticipar riesgos y estructurar soluciones a la medida de nuestros clientes.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="border-l-2 border-gold pl-4 py-1">
+                            <h4 class="font-serif font-bold text-navy text-lg">Visión Global</h4>
+                            <p class="text-xs text-slate-custom">Redes internacionales y operaciones transfronterizas.</p>
+                        </div>
+                        <div class="border-l-2 border-gold pl-4 py-1">
+                            <h4 class="font-serif font-bold text-navy text-lg">Innovación Legal</h4>
+                            <p class="text-xs text-slate-custom">Estructuración creativa ante desafíos complejos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 relative animate__animated" data-animation="animate__fadeIn">
+                    <div class="relative z-10 rounded-sm overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop" alt="Oficinas corporativas" class="w-full h-[480px] object-cover">
+                    </div>
+                    <!-- Decorative border block -->
+                    <div class="absolute -bottom-6 -right-6 w-full h-full border-2 border-gold -z-0 hidden sm:block"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRACTICE AREAS (ÁREAS DE PRÁCTICA) -->
+    <section id="practicas" class="py-24 bg-slate-light border-t border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4 animate__animated" data-animation="animate__fadeIn">
+                <span class="text-xs font-bold tracking-widest text-gold uppercase">Especialidades</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-navy">Áreas de Práctica</h2>
+                <div class="w-16 h-1 bg-gold mx-auto"></div>
+                <p class="text-slate-custom text-sm sm:text-base">
+                    Ofrecemos cobertura integral en las disciplinas clave del derecho corporativo y de negocios.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate__animated" data-animation="animate__fadeIn">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-sm border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-navy text-gold flex items-center justify-center text-xl mb-6 group-hover:bg-gold group-hover:text-navy transition-colors">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors">Corporativo y M&amp;A</h3>
+                    <p class="text-slate-custom text-sm leading-relaxed mb-6">
+                        Asesoría en fusiones, adquisiciones, reorganizaciones empresariales, pactos de accionistas y gobierno corporativo.
+                    </p>
+                    <a href="#contacto" class="text-xs font-bold tracking-widest uppercase text-navy flex items-center gap-2 group-hover:text-gold">
+                        Saber Más <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-sm border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-navy text-gold flex items-center justify-center text-xl mb-6 group-hover:bg-gold group-hover:text-navy transition-colors">
+                        <i class="fa-solid fa-gavel"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors">Litigios y Arbitraje</h3>
+                    <p class="text-slate-custom text-sm leading-relaxed mb-6">
+                        Representación procesal en disputas civiles, comerciales y arbitrajes nacionales e internacionales complejos.
+                    </p>
+                    <a href="#contacto" class="text-xs font-bold tracking-widest uppercase text-navy flex items-center gap-2 group-hover:text-gold">
+                        Saber Más <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-sm border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-navy text-gold flex items-center justify-center text-xl mb-6 group-hover:bg-gold group-hover:text-navy transition-colors">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors">Derecho Tributario</h3>
+                    <p class="text-slate-custom text-sm leading-relaxed mb-6">
+                        Planificación fiscal estratégica, tributación internacional, cumplimiento normativo y controversias tributarias.
+                    </p>
+                    <a href="#contacto" class="text-xs font-bold tracking-widest uppercase text-navy flex items-center gap-2 group-hover:text-gold">
+                        Saber Más <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white p-8 rounded-sm border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-navy text-gold flex items-center justify-center text-xl mb-6 group-hover:bg-gold group-hover:text-navy transition-colors">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors">Mercado de Capitales</h3>
+                    <p class="text-slate-custom text-sm leading-relaxed mb-6">
+                        Emisión de valores, fondos de inversión, regulaciones financieras y estructuración de deuda corporativa.
+                    </p>
+                    <a href="#contacto" class="text-xs font-bold tracking-widest uppercase text-navy flex items-center gap-2 group-hover:text-gold">
+                        Saber Más <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white p-8 rounded-sm border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-navy text-gold flex items-center justify-center text-xl mb-6 group-hover:bg-gold group-hover:text-navy transition-colors">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors">Propiedad Intelectual</h3>
+                    <p class="text-slate-custom text-sm leading-relaxed mb-6">
+                        Protección de marcas, patentes, derechos de autor, transferencia tecnológica y secretos comerciales.
+                    </p>
+                    <a href="#contacto" class="text-xs font-bold tracking-widest uppercase text-navy flex items-center gap-2 group-hover:text-gold">
+                        Saber Más <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white p-8 rounded-sm border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-navy text-gold flex items-center justify-center text-xl mb-6 group-hover:bg-gold group-hover:text-navy transition-colors">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors">Derecho Laboral &amp; Inmigración</h3>
+                    <p class="text-slate-custom text-sm leading-relaxed mb-6">
+                        Asesoría laboral corporativa, negociación colectiva, contratación ejecutiva y movilidad de talentos.
+                    </p>
+                    <a href="#contacto" class="text-xs font-bold tracking-widest uppercase text-navy flex items-center gap-2 group-hover:text-gold">
+                        Saber Más <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM / PARTNERS SECTION (EQUIPO) -->
+    <section id="equipo" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6 animate__animated" data-animation="animate__fadeIn">
+                <div>
+                    <span class="text-xs font-bold tracking-widest text-gold uppercase">Liderazgo</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mt-2">Socios Principales</h2>
+                </div>
+                <p class="text-slate-custom text-sm max-w-md">
+                    Nuestros socios cuentan con una sólida reputación en sus respectivas áreas, habiendo liderado algunas de las transacciones más relevantes del país.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 animate__animated" data-animation="animate__fadeIn">
+                <!-- Partner 1 -->
+                <div class="group">
+                    <div class="relative overflow-hidden mb-4 bg-navy">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop" alt="Socio 1" class="w-full h-80 object-cover object-top grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 opacity-90 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy via-transparent opacity-60"></div>
+                        <div class="absolute bottom-4 left-4 right-4 flex justify-end space-x-3 text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                            <a href="#" class="w-8 h-8 rounded-full bg-gold text-navy flex items-center justify-center hover:bg-white transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+                            <a href="#" class="w-8 h-8 rounded-full bg-gold text-navy flex items-center justify-center hover:bg-white transition-colors" aria-label="Email"><i class="fa-solid fa-envelope text-xs"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy group-hover:text-gold transition-colors">Abogado 1.</h3>
+                    <p class="text-xs font-semibold text-gold uppercase tracking-wider mb-2">Socio Principal - M&amp;A</p>
+                    <p class="text-xs text-slate-custom">Especialista en transacciones internacionales y reestructuraciones corporativas.</p>
+                </div>
+
+                <!-- Partner 2 -->
+                <div class="group">
+                    <div class="relative overflow-hidden mb-4 bg-navy">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop" alt="Socio 2" class="w-full h-80 object-cover object-top grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 opacity-90 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy via-transparent opacity-60"></div>
+                        <div class="absolute bottom-4 left-4 right-4 flex justify-end space-x-3 text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                            <a href="#" class="w-8 h-8 rounded-full bg-gold text-navy flex items-center justify-center hover:bg-white transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+                            <a href="#" class="w-8 h-8 rounded-full bg-gold text-navy flex items-center justify-center hover:bg-white transition-colors" aria-label="Email"><i class="fa-solid fa-envelope text-xs"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy group-hover:text-gold transition-colors">Abogado 2</h3>
+                    <p class="text-xs font-semibold text-gold uppercase tracking-wider mb-2">Socia - Arbitraje &amp; Litigios</p>
+                    <p class="text-xs text-slate-custom">Árbitro designada en tribunales internacionales y controversias complejas.</p>
+                </div>
+                <!-- 
+                <div class="group">
+                    <div class="relative overflow-hidden mb-4 bg-navy">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop" alt="Socio 3" class="w-full h-80 object-cover object-top grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 opacity-90 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy via-transparent opacity-60"></div>
+                        <div class="absolute bottom-4 left-4 right-4 flex justify-end space-x-3 text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                            <a href="#" class="w-8 h-8 rounded-full bg-gold text-navy flex items-center justify-center hover:bg-white transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+                            <a href="#" class="w-8 h-8 rounded-full bg-gold text-navy flex items-center justify-center hover:bg-white transition-colors" aria-label="Email"><i class="fa-solid fa-envelope text-xs"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy group-hover:text-gold transition-colors">Rodrigo Larraín B.</h3>
+                    <p class="text-xs font-semibold text-gold uppercase tracking-wider mb-2">Socio - Derecho Tributario</p>
+                    <p class="text-xs text-slate-custom">Ex-asesor del Ministerio de Hacienda en reformas tributarias de alto impacto.</p>
+                </div>
+
+                <div class="group">
+                    <div class="relative overflow-hidden mb-4 bg-navy">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop" alt="Socio 4" class="w-full h-80 object-cover object-top grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 opacity-90 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy via-transparent opacity-60"></div>
+                        <div class="absolute bottom-4 left-4 right-4 flex justify-end space-x-3 text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                            <a href="#" class="w-8 h-8 rounded-full bg-gold text-navy flex items-center justify-center hover:bg-white transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+                            <a href="#" class="w-8 h-8 rounded-full bg-gold text-navy flex items-center justify-center hover:bg-white transition-colors" aria-label="Email"><i class="fa-solid fa-envelope text-xs"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy group-hover:text-gold transition-colors">Patricia Vial C.</h3>
+                    <p class="text-xs font-semibold text-gold uppercase tracking-wider mb-2">Socia - Mercado de Capitales</p>
+                    <p class="text-xs text-slate-custom">Líder en emisiones públicas de bonos y fondos de inversión alternativos.</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- RECOGNITIONS / AWARDS -->
+    <section id="reconocimientos" class="py-16 bg-navy text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-10">
+                <span class="text-xs font-bold tracking-widest text-gold uppercase">Distinciones Internacionales</span>
+            </div>
+            <div class="flex flex-wrap justify-center items-center gap-12 lg:gap-20 opacity-80 filter grayscale hover:grayscale-0 transition-all duration-300 animate__animated" data-animation="animate__fadeIn">
+                <div class="text-center">
+                    <span class="font-serif text-2xl font-bold text-gold tracking-widest block">CHAMBERS</span>
+                    <span class="text-[10px] uppercase text-slate-400">Global &amp; Latin America Tier 1</span>
+                </div>
+                <div class="text-center">
+                    <span class="font-serif text-2xl font-bold text-gold tracking-widest block">LEGAL 500</span>
+                    <span class="text-[10px] uppercase text-slate-400">Top Tier Firm 2026</span>
+                </div>
+                <div class="text-center">
+                    <span class="font-serif text-2xl font-bold text-gold tracking-widest block">LATIN LAWYER</span>
+                    <span class="text-[10px] uppercase text-slate-400">Elite Law Firm</span>
+                </div>
+                <div class="text-center">
+                    <span class="font-serif text-2xl font-bold text-gold tracking-widest block">IFLR1000</span>
+                    <span class="text-[10px] uppercase text-slate-400">Financial &amp; Corporate Leader</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contacto" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Info Left -->
+                <div class="lg:col-span-5 space-y-8 animate__animated" data-animation="animate__fadeIn">
+                    <div>
+                        <span class="text-xs font-bold tracking-widest text-gold uppercase">Contacto</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy mt-2">Conversemos sobre su proyecto o asunto legal</h2>
+                    </div>
+
+                    <p class="text-slate-custom text-sm leading-relaxed">
+                        Nuestras oficinas principales están ubicadas en ***, prestándole servicios a clientes nacionales e internacionales.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-navy text-gold flex items-center justify-center shrink-0 rounded-sm">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-navy text-sm">Oficina Central Comuna Ciudad</h4>
+                                <p class="text-xs text-slate-custom">Av. Dirección Sucurusal 3000, Piso 20, Comunda</p>
+                                <p class="text-xs text-slate-custom">Ciudad, Chile</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-navy text-gold flex items-center justify-center shrink-0 rounded-sm">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-navy text-sm">Teléfono &amp; Fax</h4>
+                                <p class="text-xs text-slate-custom">Central: +56 2 2222 0000</p>
+                                <p class="text-xs text-slate-custom">Fax: +56 2 3333 0001</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-navy text-gold flex items-center justify-center shrink-0 rounded-sm">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-navy text-sm">Correos Electrónicos</h4>
+                                <p class="text-xs text-slate-custom">contacto1@abogado.com</p>
+                                <p class="text-xs text-slate-custom">contacto2@abogado.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Right -->
+                <div class="lg:col-span-7 bg-slate-light p-8 sm:p-10 rounded-sm border border-slate-200 shadow-sm animate__animated" data-animation="animate__fadeIn">
+                    <h3 class="font-serif text-2xl font-bold text-navy mb-6">Enviar una Consulta</h3>
+                    
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="nombre" class="block text-xs font-bold uppercase tracking-wider text-navy mb-2">Nombre Completo *</label>
+                                <input type="text" id="nombre" required class="w-full bg-white border border-slate-300 px-4 py-3 text-sm rounded-sm focus:outline-none focus:border-gold transition-colors">
+                            </div>
+                            <div>
+                                <label for="empresa" class="block text-xs font-bold uppercase tracking-wider text-navy mb-2">Empresa / Organización</label>
+                                <input type="text" id="empresa" class="w-full bg-white border border-slate-300 px-4 py-3 text-sm rounded-sm focus:outline-none focus:border-gold transition-colors">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="email" class="block text-xs font-bold uppercase tracking-wider text-navy mb-2">Correo Corporativo *</label>
+                                <input type="email" id="email" required class="w-full bg-white border border-slate-300 px-4 py-3 text-sm rounded-sm focus:outline-none focus:border-gold transition-colors">
+                            </div>
+                            <div>
+                                <label for="telefono" class="block text-xs font-bold uppercase tracking-wider text-navy mb-2">Teléfono de Contacto</label>
+                                <input type="tel" id="telefono" class="w-full bg-white border border-slate-300 px-4 py-3 text-sm rounded-sm focus:outline-none focus:border-gold transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="area" class="block text-xs font-bold uppercase tracking-wider text-navy mb-2">Área de Interés *</label>
+                            <select id="area" required class="w-full bg-white border border-slate-300 px-4 py-3 text-sm rounded-sm focus:outline-none focus:border-gold transition-colors text-slate-700">
+                                <option value="">Seleccione un área de práctica</option>
+                                <option value="corporativo">Corporativo y M&amp;A</option>
+                                <option value="litigios">Litigios y Arbitraje</option>
+                                <option value="tributario">Derecho Tributario</option>
+                                <option value="capitales">Mercado de Capitales</option>
+                                <option value="propiedad">Propiedad Intelectual</option>
+                                <option value="laboral">Derecho Laboral</option>
+                                <option value="otro">Otro Asunto</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="mensaje" class="block text-xs font-bold uppercase tracking-wider text-navy mb-2">Detalle de la Consulta *</label>
+                            <textarea id="mensaje" rows="4" required class="w-full bg-white border border-slate-300 px-4 py-3 text-sm rounded-sm focus:outline-none focus:border-gold transition-colors"></textarea>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <input type="checkbox" id="politica" required class="mt-1 text-gold focus:ring-gold rounded-sm">
+                            <label for="politica" class="text-xs text-slate-custom">Acepto el tratamiento de mis datos de acuerdo a la Política de Privacidad de la firma.</label>
+                        </div>
+
+                        <button type="submit" class="w-full bg-navy text-gold hover:bg-navy-light font-bold text-xs uppercase tracking-widest py-4 transition-colors shadow-md">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-navy-dark text-slate-400 py-16 border-t border-navy-light/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+                <!-- Col 1 -->
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 border border-gold flex items-center justify-center font-serif text-lg text-gold font-bold">
+                            A
+                        </div>
+                        <span class="font-serif text-lg tracking-wider uppercase font-bold text-white">Estudio Jurídico</span>
+                    </div>
+                    <p class="text-xs leading-relaxed text-slate-400 max-w-sm">
+                        Firma de abogados comprometida con la excelencia legal, la transparencia corporativa y el éxito estratégico de nuestros clientes.
+                    </p>
+                    <div class="flex space-x-4 pt-2">
+                        <a href="#" class="text-slate-400 hover:text-gold transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-gold transition-colors" aria-label="Twitter"><i class="fa-brands fa-x-twitter text-lg"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-gold transition-colors" aria-label="Youtube"><i class="fa-brands fa-youtube text-lg"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2 -->
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-white mb-4">Navegación</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#nosotros" class="hover:text-gold transition-colors">Nosotros</a></li>
+                        <li><a href="#practicas" class="hover:text-gold transition-colors">Áreas de Práctica</a></li>
+                        <li><a href="#equipo" class="hover:text-gold transition-colors">Equipo de Socios</a></li>
+                        <!-- <li><a href="#publicaciones" class="hover:text-gold transition-colors">Publicaciones</a></li> -->
+                        <li><a href="#contacto" class="hover:text-gold transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-white mb-4">Áreas Clave</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#practicas" class="hover:text-gold transition-colors">Fusiones y Adquisiciones</a></li>
+                        <li><a href="#practicas" class="hover:text-gold transition-colors">Arbitraje Internacional</a></li>
+                        <li><a href="#practicas" class="hover:text-gold transition-colors">Planificación Tributaria</a></li>
+                        <li><a href="#practicas" class="hover:text-gold transition-colors">Derecho Financiero</a></li>
+                        <li><a href="#practicas" class="hover:text-gold transition-colors">Propiedad Intelectual</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-white mb-4">Ubicación</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-2">
+                        Dirección Sucursal 3000<br>
+                        Piso 20, Comuna<br>
+                        Ciudad - Chile
+                    </p>
+                    <p class="text-xs text-gold font-semibold">+56 2 2222 0000</p>
+                </div>
+            </div>
+
+            <div class="border-t border-navy-light/40 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>&copy; 2026 Estudio Jurídico. Todos los derechos reservados.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-slate-300 transition-colors">Términos de Uso</a>
+                    <a href="#" class="hover:text-slate-300 transition-colors">Política de Privacidad</a>
+                    <a href="#" class="hover:text-slate-300 transition-colors">Código de Ética</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

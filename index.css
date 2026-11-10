@@ -1,0 +1,24 @@
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0b192c;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5a059;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b08b46;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #e8d4a6 0%, #c5a059 50%, #9e7a37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(to right, #c5a059, #e8d4a6, #c5a059) 1;
+}
